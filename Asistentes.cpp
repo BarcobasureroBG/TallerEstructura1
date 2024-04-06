@@ -55,13 +55,13 @@ string Asistentes::getCodigoEvento() //retorna el código del evento asignado al
     return this -> codigoEvento;
 }
 
-string Asistentes::informacionCompletaAsistente()
+string Asistentes::informacionCompletaAsistente() // Función para obtener la información completa del asistente
 {
     string edad = to_string(this->edad);
     return edad + "," + this->tipoPersona + "," + this->rut + "," + this->nombre + "," + this->datoDiferenciador + "," + this->codigoEvento;
 }
 
-Asistentes* Asistentes::crearAsistente(string codigoEvento)
+Asistentes* Asistentes::crearAsistente(string codigoEvento)// Función para crear un nuevo objeto Asistentes 
 {
     string edadcrear,tipoInvi, rutcrear,nombreCrear,datoDife;
     cout<<"\nIngrese edad del invitado: ";
@@ -86,7 +86,7 @@ Asistentes* Asistentes::crearAsistente(string codigoEvento)
     return asistente;
 }
 
-int Asistentes::sumaEdades(vector<Asistentes*>& asistentes)
+int Asistentes::sumaEdades(vector<Asistentes*>& asistentes)// Función para calcular la suma de las edades de todos los asistentes en un vector
 {
     int sumaEdades = 0;
     for(Asistentes* asistente : asistentes)
@@ -96,7 +96,7 @@ int Asistentes::sumaEdades(vector<Asistentes*>& asistentes)
     return sumaEdades;
 }
 
-Asistentes* Asistentes::agregarDatosAsistentes(string datosAsistente)//esto es una mausque herramienta misteriosa que ocuparemos cuando sepa leer archivos.txt xd
+Asistentes* Asistentes::agregarDatosAsistentes(string datosAsistente)// Función para agregar datos de los asistentes
 {
     
     string edadString, tipoPersona, rut, nombre, datoDiferenciador, estadoAsistencia, codigoEvento;
@@ -123,7 +123,7 @@ Asistentes* Asistentes::agregarDatosAsistentes(string datosAsistente)//esto es u
 }
 
 
-void Asistentes::actualizarDatosAsistentes(string actualizacionAsistentes)
+void Asistentes::actualizarDatosAsistentes(string actualizacionAsistentes)// Función para actualizar los datos de los asistentes
 {
     ofstream datosAsistentes("Datos Asistentes.txt", ios::out);
     datosAsistentes << actualizacionAsistentes;

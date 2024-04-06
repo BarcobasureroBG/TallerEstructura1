@@ -69,44 +69,44 @@ FUNCIONES:
 
 Asistentes:
     
-    // Destructor de la clase Asistentes
     ~Asistentes(); 
+    // Destructor de la clase Asistentes
 
-    // Función para obtener la edad del asistente
     int getEdad(); 
+    // Función para obtener la edad del asistente
 
-    // Función para eliminar un asistente de un vector de punteros a Asistentes
     void eliminarAsistentes(vector<Asistentes*>&);
+    // Función para eliminar un asistente de un vector de punteros a Asistentes
 
-    // Función para calcular la suma de las edades de todos los asistentes en un vector de punteros a Asistentes
     int sumaEdades(vector<Asistentes*>&);
+    // Función para calcular la suma de las edades de todos los asistentes en un vector 
 
-    // Función para crear un nuevo objeto Asistentes a partir de un nombre
     Asistentes* crearAsistente(string);
+    // Función para crear un nuevo objeto Asistentes 
 
-    // Función para obtener el tipo de persona del asistente
     string getTipoPersona(); 
+    // Función para obtener el tipo de persona del asistente
 
-    // Función para obtener el rut del asistente
     string getRut(); 
+    // Función para obtener el rut del asistente
 
-    // Función para obtener el nombre del asistente
     string getNombre(); 
+    // Función para obtener el nombre del asistente
 
-    // Función para obtener el dato diferenciador del asistente
     string getDatoDiferenciador(); 
+    // Función para obtener el dato diferenciador del asistente
 
-    // Función para obtener el código del evento al que asistió el asistente
     string getCodigoEvento(); 
+    // Función para obtener el código del evento al que asistió el asistente
 
-    // Función para obtener la información completa del asistente
     string informacionCompletaAsistente(); 
+    // Función para obtener la información completa del asistente
 
-    // Función para actualizar los datos de un asistente
     void actualizarDatosAsistentes(string); 
+    // Función para actualizar los datos de los asistentes
 
-    // Función para agregar datos a un asistente
     Asistentes* agregarDatosAsistentes(string);
+    // Función para agregar datos de los asistentes
 
 Eventos:
 
