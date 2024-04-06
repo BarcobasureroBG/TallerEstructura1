@@ -11,8 +11,8 @@ class Asistentes
         string tipoPersona, rut, nombre, datoDiferenciador, codigoEvento;
     public:
         Asistentes(int, string, string, string, string, string);
-        ~Asistentes();//xd
-        int getEdad();//arroz
+        ~Asistentes();
+        int getEdad();
         void eliminarAsistentes(vector<Asistentes*>&);
         int sumaEdades(vector<Asistentes*>&);
         Asistentes* crearAsistente(string);

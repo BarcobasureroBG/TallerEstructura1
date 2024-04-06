@@ -65,3 +65,114 @@ Asistentes(41,"organizador","564789123","Gloria Patiño","invitado especial","89
 Asistentes(37,"invitado","687213945","Mauricio Serrano","otro","8901")
 Asistentes(32,"invitado","498765321","Carmen López","invitado especial","8901")
 
+FUNCIONES:
+
+Asistentes:
+    
+    // Destructor de la clase Asistentes
+    ~Asistentes(); 
+
+    // Función para obtener la edad del asistente
+    int getEdad(); 
+
+    // Función para eliminar un asistente de un vector de punteros a Asistentes
+    void eliminarAsistentes(vector<Asistentes*>&);
+
+    // Función para calcular la suma de las edades de todos los asistentes en un vector de punteros a Asistentes
+    int sumaEdades(vector<Asistentes*>&);
+
+    // Función para crear un nuevo objeto Asistentes a partir de un nombre
+    Asistentes* crearAsistente(string);
+
+    // Función para obtener el tipo de persona del asistente
+    string getTipoPersona(); 
+
+    // Función para obtener el rut del asistente
+    string getRut(); 
+
+    // Función para obtener el nombre del asistente
+    string getNombre(); 
+
+    // Función para obtener el dato diferenciador del asistente
+    string getDatoDiferenciador(); 
+
+    // Función para obtener el código del evento al que asistió el asistente
+    string getCodigoEvento(); 
+
+    // Función para obtener la información completa del asistente
+    string informacionCompletaAsistente(); 
+
+    // Función para actualizar los datos de un asistente
+    void actualizarDatosAsistentes(string); 
+
+    // Función para agregar datos a un asistente
+    Asistentes* agregarDatosAsistentes(string);
+
+Eventos:
+
+    ~Eventos();//destructor
+    Eventos(string, string, string, string, string, string);
+    // Constructor para crear un nuevo evento con información inicial como tipo de evento, ubicación, si se ofrecen alimentos, fecha, tipo de música y código del evento.
+
+    void agregarAsistente(Asistentes*&);
+    // Agrega un nuevo asistente (apuntado por el puntero Asistentes) al evento.
+
+    string obtenerCodigoEvento(vector<Eventos*>&);
+    // Devuelve el código de un evento específico de una lista de eventos.
+
+    bool compararFechas(string, string);
+    // Compara dos fechas para determinar si son iguales, anteriores o posteriores.
+
+    bool verificarCodigoEvento(string, vector<Eventos*>&);
+    // Verifica si un código de evento ya existe en la lista de eventos.
+
+    bool cantidadEventosDia(vector<Eventos*>&, string);
+    // Verifica la cantidad de eventos programados para una fecha específica.
+
+    void crearEvento(vector<Eventos*>&, string);
+    // Crea y añade un nuevo evento a la lista de eventos.
+
+    void informacionGeneral(vector<Eventos*>&);
+    // Muestra información general sobre todos los eventos en la lista.
+
+    void agregarDatosEventos(vector<Eventos*>&, string, string);
+    // Añade o modifica datos específicos de un evento.
+
+    void desplegarEventos(vector<Eventos*>&);
+    // Muestra todos los eventos en la lista.
+
+    void actualizarDatosEventos(string);
+    // Actualiza los datos de un evento específico.
+
+    void registrarAsistente(vector<Eventos*>&);
+    // Registra un nuevo asistente en un evento específico.
+
+    void revisionAsistentes(vector<Eventos*>&);
+    // Revisa la lista de asistentes de todos los eventos.
+
+    void eliminarEvento(vector<Eventos*>&);
+    // Elimina un evento específico de la lista de eventos.
+
+    string informacionCompletaEventos();
+    // Devuelve una cadena de texto con toda la información de un evento, incluyendo detalles y asistentes.
+
+    vector<Asistentes*> getAsistentes();
+    // Devuelve un vector con los punteros a los asistentes de un evento.
+
+    string getTipoEvento();
+    // Devuelve el tipo de un evento (por ejemplo, concierto, conferencia).
+
+    string getUbicacion();
+    // Devuelve la ubicación donde se llevará a cabo el evento.
+
+    string getAlimentos();
+    // Indica el tipo de alimentos.
+
+    string getFecha();
+    // Devuelve la fecha en la que está programado el evento.
+
+    string getTipoMusica();
+    // Devuelve el tipo de música que se ofrecerá en el evento.
+
+    string getCodigoEvento();
+    // Devuelve el código único asignado al evento.
