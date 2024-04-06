@@ -1,4 +1,6 @@
-# TallerEstructura
+# TallerEstructura1
+Benjamín Garcés 215459144 benjamin.garces@alumnos.ucn.cl
+Pablo Jorquera 215455637 pablo.jorquera@alumnos.ucn.cl
 
 Datos presentes en los txt:
 Eventos: 
